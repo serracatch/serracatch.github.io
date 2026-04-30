@@ -1,13 +1,7 @@
-import { register, SocialIcon } from 'react-social-icons';
+import { SocialIcon } from 'react-social-icons';
 import cartIcon from '../assets/cart-svgrepo-com.svg';
 import hero from '../assets/serracatch-large-door.webp';
 import '../styles/navgrid.css';
-
-register('cart', {
-  color: '#28a745',
-  // Scaled up for the react-social-icons internal 64x64 grid
-  path: 'M14 16h38.7c1.6 0 3-1.1 3.3-2.6l4.6-18.7c.3-1.4-.8-2.7-2.3-2.7H16.4l-1-4.7c-.3-1.4-1.6-2.3-3-2.3H4c-1.7 0-3 1.3-3 3s1.3 3 3 3h5.8l8.3 38.3c.3 1.4 1.6 2.4 3 2.4H50c1.7 0 3-1.3 3-3s-1.3-3-3-3H20.1l-1-4.7zM20 54c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm30 0c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6z'
-});
 
 export default function HomePage() {
   return (
@@ -17,7 +11,7 @@ export default function HomePage() {
       </div>
       <div className='flex-col p-2 gap-2'>
         <div className='flex-center'>
-          <img src={hero} style={{ width: 700, maxWidth:'100%' }} />
+          <img src={hero} style={{ width: 700, maxWidth: '100%' }} />
         </div>
         <div className='flex-center'>
           <a href='https://serracatch.myshopify.com/' className='btn primary'>
